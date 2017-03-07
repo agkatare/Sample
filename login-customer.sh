@@ -13,7 +13,7 @@ DATA="<login><email>"$EmailId"</email><password>"$Password"</password></login>"
 echo $DATA
 URL=$VCS_URL/ivi/customer/login/
 
-echo $URL
+#echo $URL
 
 loginResp=`curl -v -H "localId: $LOCALID_SHA" -H "partnerId: $PARTNERID_SHA" -H "date: $REQUESTDATE" -H "sessionKey: $SESSIONKEY" -H "sessionSecret: $SESSIONSECRET_SHA" -H "Content-Type: application/xml" -X POST --data $DATA $URL`
 
