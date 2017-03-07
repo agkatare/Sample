@@ -17,4 +17,4 @@ echo $URL
 
 loginResp=`curl -v -H "localId: $LOCALID_SHA" -H "partnerId: $PARTNERID_SHA" -H "date: $REQUESTDATE" -H "sessionKey: $SESSIONKEY" -H "sessionSecret: $SESSIONSECRET_SHA" -H "Content-Type: application/xml" -X POST --data $DATA $URL`
 
-echo ${loginResp}
+#echo ${loginResp}
