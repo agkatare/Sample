@@ -10,7 +10,6 @@ LOCALID_SHA=`echo -n $LOCAL_ID${REQUESTDATE}| openssl sha1 | sed s/'(stdin)= '//
 
 
 #. ./seturl.sh
-#
 
 URL=$VCS_URL/ivi/customer/$CUSTOMER_ID/logout
 echo $URL
